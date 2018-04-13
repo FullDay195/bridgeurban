@@ -10,18 +10,40 @@
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
-<body>
-	<header>
-		<div class="wrap-menu">						
-			<div class="container_menu">						
+<body>	
+	<header>	
+		<div id="wrap_search_top" style="top: -50px;">						 
+			<form action="http://demo.qodeinteractive.com/bridge7/" style="height: 50px">
+				<i class="fa fa-search"></i>					
+				<input type="text" placeholder="Search">
+				<input type="submit" value="Search">
+				<i onclick="hide1Element()" class="fa fa-times" style="float: right; line-height: 50px;"></i>
+			</form>
+			<script>
+				function hide1Element() {
+					document.getElementById("wrap_search_top").style.top = "-50px";
+					document.getElementById("container_menu").style.margin = "0px";
+					document.getElementById("myCarousel").style.top = "0px";
+				}	
+			</script>			
+		</div>	
+		<div class="wrap-menu">			
+			<div id="container_menu" style="top: 50px">						
 				<a href="#"><img src="image/logo_urban.png" alt="logo"></a>
 				<div class="inner_right">					
 					<div class="button">
-						<a class="search_button" href="#"><i class="fa fa-search"></i></a>
-						<a onclick="displayElement()" class="bars_button" href="javascript:void(0)"><i class="fa fa-bars"></i></a>
+						<a onclick="display1Element()" class="search_button" href="#"><i class="fa fa-search"></i></a>
+						<script>
+							function display1Element() {
+								document.getElementById("wrap_search_top").style.top = "0px";
+								document.getElementById("container_menu").style.margin = "50px 0 0 0";
+								document.getElementById("myCarousel").style.top = "50px";
+							}	
+						</script>
+						<a onclick="display2Element()" class="bars_button" href="javascript:void(0)"><i class="fa fa-bars"></i></a>
 						<!-- <i class="fa fa-bars bars_button"></i> -->
 						<script>
-							function displayElement() {
+							function display2Element() {
 								document.getElementById("wrap_popup_menu").style.display = "block";
 							}
 						</script>
@@ -112,7 +134,7 @@
 			</div>
 	<!--Nội dung-->
 			<div class="content">
-				<div id="myCarousel" class="carousel slide" data-ride="carousel" style="position: absolute; top:0;z-index: -1">
+				<div id="myCarousel" class="carousel slide" data-ride="carousel" style="position: absolute; top:0px;z-index: -1">
     				<!-- Nút chấm dưới hình -->
     				<ol class="carousel-indicators">
     			  		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -143,6 +165,7 @@
     			  		<span class="nex-nav"><i class="fa fa-angle-right"></i></span>
     			  		<span class="sr-only">Next</span>
     				</a>
+    				<div class="wrap_title_outer">
     				<div class="wrap_title">
     					<h2 class="title">URBAN ENVIRONMENTS</h2>
     					<p>
@@ -153,18 +176,17 @@
     					<button class="but1"><a href="#">VIEW MORE</a></button>
     					<button class="but2"><a href="#">VIEW MORE</a></button>
     				</div>
+    				</div>
   				</div>
-			</div>	
-			<div id="wrap_search">				
-			</div>
+			</div>				
 			<div id="wrap_popup_menu">
 				<a href="#"><img src="image/logo_urban.png" alt="logo"></a>
-				<i onclick="hideElement()" class="fa fa-times"></i>
+				<i onclick="hide2Element()" class="fa fa-times"></i>
 				<script>
-						function hideElement() {
-								document.getElementById("wrap_popup_menu").style.display = "none";
-							}
-						</script>
+					function hide2Element() {
+							document.getElementById("wrap_popup_menu").style.display = "none";
+						}
+					</script>
 				<div class="popup_menu_inner">	
 					<nav>
 						<ul>
@@ -176,7 +198,7 @@
 						</ul>
 					</nav>
 				</div>				
-			</div>	
+			</div>				
 		</div>		
 	</header>		
 </body>
