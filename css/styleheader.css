@@ -2,12 +2,8 @@ body {
 	margin: 0;
 	padding: 0;
 }
-header {		
-}
-/*.wrap-menu{	
-	height: auto;
-	width: auto;
-}*/
+
+/*Search_bar*/ 
 #wrap_search_top {	
 	position: absolute;
 	height: 50px;
@@ -35,7 +31,7 @@ input:focus {outline: 0;}
 #container_menu {	
 	margin: 0 45px 0 45px;
 	height: 100px;
-	padding: 0 80px 0 80px;		
+	padding: 0 80px 0 80px;			
 }
 #container_menu img {
 	height: 90px;
@@ -45,6 +41,7 @@ input:focus {outline: 0;}
 #container_menu a:hover{
 	cursor: pointer;
 }
+
 
 /*Căn lề menu*/
 .inner_right {
@@ -81,8 +78,9 @@ ul#menu .dropdown > a{
 	line-height: 100px;
 }
 
+
  /*Edit Text Menu*/
- ul#menu > li > a {
+ul#menu > li > a {
  	color: white;
  	/*color: black;*/
  	text-decoration: none;
@@ -95,6 +93,7 @@ ul#menu .dropdown > a{
  	padding: 0 12px; 	
  }
 
+/*-------------------Xổ Menu*/
 /*Xổ menu con PAGES*/
 .dropdown {    
 	position: relative;
@@ -133,7 +132,6 @@ ul#menu .dropdown > a{
 .dropdown:hover .dropdown_content1 {
 	display: block;
 }
-
 
 /*Xổ menu cone WORK*/
 .dropdown_content2 {
@@ -239,6 +237,7 @@ ul#menu .dropdown > a{
 }
 .dropdown_content3 li:last-child:hover .dropdown_content3_3 {display: block;}
 
+
 /*Background - Carousel*/
 .carousel-control span:first-child {
 	position: absolute;
@@ -260,21 +259,24 @@ ul#menu .dropdown > a{
 	font-size: 30px;
 }
 
-/*Title*/
-.wrap_title_outer .wrap_title {
+/*------------Title*/
+
+.wrap_title {	
 	position: absolute;
 	height: auto;
-	width: 1100px;	
+	width: 80.527vw;	
+	z-index: -1;
+	top: 19.4vw;	
+	left: 50%;
+	transform: translateX(-50%);	
 	text-align: center;	
-	left: 50%;  
-    transform: translateX(-50%);
-}
 
+}
 .wrap_title h2 {
 	color: #ffffff;
 	/*color: black;*/
-	font-size: 90px;
-	line-height: 100px;
+	font-size: 6.59vw;  /*90px*/
+	line-height: 7.32vw;  /*100px*/
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
 	text-shadow: none;
@@ -282,7 +284,7 @@ ul#menu .dropdown > a{
 .wrap_title p span {
 	color: #ffffff;
 	/*color: black;*/
-	font-size: 20px;
+	font-size: 1.464vw; /*20px*/
 	line-height: 30px;
 	font-family: 'Raleway', sans-serif;
 	opacity: 0.8;
@@ -296,7 +298,7 @@ ul#menu .dropdown > a{
 	border-width: 1px;
 }
 .wrap_title button {
-	height: 39px;
+	height: 2.855vw;    /*39px*/
 	width: auto;
 	font-size: 13px;
 	padding: 0 23px;
@@ -323,10 +325,10 @@ ul#menu .dropdown > a{
 	animation-delay: 0s;
 }
 
- @keyframes move {
-    0% {top: 310px; opacity: 0;}
-    20%, 80% {top: 265px; opacity: 1} 
-    100% {top: 310px; opacity: 0}
+@keyframes move {
+    0% {top: 22.694vw; opacity: 0;}
+    20%, 80% {top: 19.4vw; opacity: 1} 
+    100% {top: 22.694vw; opacity: 0}
 }
 
 /*Popup_menu*/
