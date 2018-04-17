@@ -1,19 +1,15 @@
-.wrap_content {
-	position: relative;
-	 z-index: 100
-}
+
 section.content1 {
 	position: relative;
-	padding-top: 75px;   /*vw better*/
-	padding-bottom: 35px;
-	background-color: #f8f8f8;
-	/*background-color: red;*/
+	padding-top: 5.49vw;   
+	padding-bottom: 2.562vw;
+	background-color: #f8f8f8;	
 	top: 48.46434vw;
 }
 .container_content1 {
-	width: 1130px;	
+	width: 82.7233vw;	
 	margin: auto;
-	position: relative;
+	position: relative;	
 }
 .content1_inner {
 	padding: 0 15px;
@@ -50,14 +46,14 @@ section.content1 {
 }
 
 .content1_inner .menu_icons {
-	width: 1130px;
-	height: 220px;
+	width: 82.7233vw;
+	height: 240px;
 	padding-left: -15px;	
 }
 .content1_inner .menu_icons .screen-3 {
 	position: relative;	
 	display: block;
-	width: 275px;	
+	width: 20.13178vw;	
 	float: left;
 }
 .screen-3 .wrap_icon {
@@ -73,7 +69,7 @@ section.content1 {
 	width: 95px;
 	height: 95px;
 	background-color: black;
-	border-radius: 95px;
+	border-radius: 6.954212vw;	
 }
 .screen-3 .wrap_icon .icon i {		
 	font-size: 24px;
