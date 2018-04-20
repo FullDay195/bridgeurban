@@ -1,0 +1,72 @@
+.content3 {
+	position: relative;
+	background-attachment: fixed;
+	background-image: url(../image/parallax01.jpg);
+	height: 463px; 
+	background-position:50% 5%; 
+	background-repeat: no-repeat;
+}
+.content3_container {
+	position: relative;
+	margin: 0 auto;
+	width: 1100px;
+}
+.content3_inner {	
+	font-family: 'Raleway',  sans-serif;
+}
+.content3_inner .space {
+	padding-top: 120px;
+}
+.content3_inner h2 {
+	text-align: center;
+	color: white;
+	font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0;
+}
+.content3_inner .line {
+	margin: 25px auto 30px auto;
+	height: 1px;
+	width: 90px;
+	background-color: white;
+}
+.content3_inner h6 {
+	margin: 0 !important;
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+.content3_inner .space2 {
+	padding-top: 30px;
+}
+.content3_container .btn_container {
+	width: 1100px;
+	/*padding: 0 auto;*/
+}
+.content3_container .btn_container .btn {
+	padding: 0 !important;
+	width: 1100px;
+	padding: 0 auto;	
+}
+.content3_container .btn_container .btn a {
+	border: 0px solid white;
+	height: 30px;
+	padding: 7px 17px;
+	background-color: white;
+	text-decoration: none;
+	color: black;	
+	line-height: 30px;	
+}
+.content3_container .btn_container .btn a:hover {
+	background-color: #f53644;
+	color: white;
+}
+.content3_container .btn_container .btn a > span {
+	font-family: 'Raleway', sans-serif;
+	font-size: 11px;
+	font-weight: 900;
+	letter-spacing: 1px;
+}

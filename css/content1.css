@@ -1,20 +1,20 @@
-
-section.content1 {
+.main {
+	top: 48.46434vw;
 	position: relative;
+}
+section.content1 {	
 	padding-top: 5.49vw;   
 	padding-bottom: 2.562vw;
-	background-color: #f8f8f8;	
-	top: 48.46434vw;
+	background-color: #f8f8f8;		    
+	/*top: 500px;*/
 }
-.container_content1 {
+.content1_container {
 	width: 82.7233vw;	
 	margin: auto;
 	position: relative;	
 }
 .content1_inner {
 	padding: 0 15px;
-}
-.content1_inner {
 	font-family: 'Raleway', sans-serif;
 }
 .content1_inner h2 {

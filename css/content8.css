@@ -1,0 +1,88 @@
+.content8 {
+	background-color: #f8f8f8;
+	padding: 75px 0 35px 0;
+}
+.content8_container {
+	position: relative;
+	margin: 0 auto;
+	width: 1100px;
+	height: 300px; 						
+}
+.content8_inner {
+	padding: 0 15px;
+	width: 1100px;
+}
+.content8_inner h3 {
+	font-family: 'Raleway', sans-serif;
+	color: #303030;
+    font-size: 27px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 0;
+}
+.content8_inner .space {
+	background-color: #818181;
+	width: 90px;
+	height: 1px;
+	margin: 25px auto 30px auto;
+}
+
+
+.content8_inner ul {
+	width: 1100px;
+	margin: 0;
+	padding: 0;
+}
+.content8_inner .text li {
+	list-style: none;
+}
+.content8_inner .text ul li p:first-child {	
+	font-size: 18px;
+	color: #818181;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	text-align: center;
+}
+.content8_inner .text ul li p:last-child {	
+	
+	font-family: 'Raleway', sans-serif;
+	font-size: 13px;
+    color: #303030;   
+    font-weight: 500;
+    text-align: center;    
+}
+.content8_inner .text ul li:first-child {
+	display: block;
+}
+.content8_inner .text ul li:last-child {
+	display: none;
+}
+
+.content8_inner .button {
+	padding: 0 !important;
+	width: 1100px;	
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin-top: 30px;
+}
+.content8_inner .button a {
+	text-decoration: none;
+	border: 2px solid black;
+	border-radius: 50px;
+	width: 30px;
+	height: 30px;
+	color: black;
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: 300;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+.content8_inner .button a:hover {
+	background-color: #f53644;
+	color: white;
+	border: 2px solid #f53644;
+}

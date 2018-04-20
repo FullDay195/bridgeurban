@@ -1,0 +1,79 @@
+section.content5 {
+	padding: 80px 0;
+	background-color: #f1f1f1;	
+}
+.content5_container {
+	position: relative;
+	margin: 0 auto;
+	width: 1100px;
+	height: 410px; 						
+}
+.content5_inner .image {
+	position: absolute;
+	width: 33.33333333%;
+	padding: 0 15px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+.content5_inner .text {
+	position: absolute;
+	width: 66.6666%;
+	margin: 30px 0 0 385px;
+}
+.content5_inner .text h3 {
+	font-family: 'Raleway',  sans-serif;
+	font-size: 27px;
+	font-weight: 600;
+}
+.content5_inner .text .space1 {
+	width: 90px;
+	height: 1px;
+	background-color: #818181;
+	margin: 25px 0 30px 0;
+}
+.content5_inner .text p {
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	color: #818181;
+	margin: 0 !important;	
+	line-height: 26px;
+}
+.content5_inner .text .space2 {	
+	margin: 32px 0 5px 0;
+}
+.content5_inner .btn {
+	padding: 0;
+}
+.content5_inner .btn a {
+	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+	font-size: 11px;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+.content5_inner .btn1 {
+	height: 30px;
+	line-height: 30px;
+	padding: 7px 17px;
+	background-color: black;
+	color: white;
+}
+.content5_inner .btn1:hover{
+	background-color: #f53644;
+	color: white;
+}
+.content5_inner .btn2:hover {
+	background-color: #f53644;
+}
+
+.content5_inner .btn2 {
+	margin-left: 5px;
+	height: 30px;
+	line-height: 30px;
+	padding: 7px 17px;
+	background-color: #f1f1f1;
+	color: black;
+	border: 1px solid #D3D3D3;
+}

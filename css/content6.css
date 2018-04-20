@@ -1,0 +1,36 @@
+.content6 {
+	position: relative;
+	background-image: url(../image/parallax02.jpg);
+	background-attachment: fixed;	
+	height: 527px; 
+	background-position: 50% 5%; 
+	background-repeat: no-repeat;
+}
+.content6_container {
+	position: relative;
+	margin: 0 auto;
+	width: 1100px;
+}
+.content6_inner .space {	
+	padding-top: 105px;
+}
+.content6_inner h2 {
+	margin: 0;
+	text-align: center;
+	color: white;
+	font-weight: 600;
+	font-size: 35px;
+	letter-spacing: 1px;
+}
+.content6_inner .line {
+	margin: 25px auto 30px auto;
+	height: 1px;
+	width: 90px;
+	background-color: white;
+}
+.content6_inner p {
+	color: white;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 300;	
+}

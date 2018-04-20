@@ -1,0 +1,35 @@
+.content9 {
+	background-image: url(../image/parallax03.jpg);
+	height: 490px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 50% -10%;
+}
+.content9_container {
+	margin: 0 auto;
+	width: 1100px;
+}
+.content9_inner .space1 {
+	padding-top: 150px;
+}
+.content9_inner h2 {
+	font-family: 'Raleway', sans-serif;
+	color: white;
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    border: 1px solid white;
+    padding: 17px 0;
+}
+.content9_inner .space2 {
+	padding: 10px 0 20px 0;
+}
+.content9_inner h6 {
+	margin: 0 !important;
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
