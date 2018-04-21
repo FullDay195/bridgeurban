@@ -1,4 +1,3 @@
-
 function hide1Element() {
 	document.getElementById("wrap_search_top").style.top = "-50px";
 	document.getElementById("container_menu").style.margin = "0 45px 0 45px";

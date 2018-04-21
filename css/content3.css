@@ -2,9 +2,8 @@
 	position: relative;
 	background-attachment: fixed;
 	background-image: url(../image/parallax01.jpg);
-	height: 463px; 
-	background-position:50% 5%; 
-	background-repeat: no-repeat;
+	height: 463px; 	
+	background-repeat: no-repeat;	
 }
 .content3_container {
 	position: relative;

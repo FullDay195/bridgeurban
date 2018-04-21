@@ -74,7 +74,7 @@ section.content7 {
 	color: black;
 	border: 1px solid #D3D3D3;
 }
-.content7_inner .image{
+.content7_inner #imgContent7 {
 	position: relative;
 	padding: 0 15px 0 30px;
 	width: 33.33333%;
@@ -82,4 +82,11 @@ section.content7 {
 	justify-content: center;
 	align-content: center;
 	float: right;
+	position: absolute;
+	opacity: 0;
+	right: -80px;
+	transition-delay: 0.5s;
+	transition-duration: 1s;
+	transition-property: opacity, right;
+	transition-timing-function: ease;
 }
