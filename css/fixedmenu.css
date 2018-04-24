@@ -1,0 +1,56 @@
+.sticky {
+	position: fixed;
+	top: 0px !important;
+	background-color: white;
+	z-index: 10000;
+	height: 60px !important;	
+	width: 100%;
+	right: 0;
+	transition-duration: 1s;
+	transition-timing-function: ease;
+	transition-property: top;
+}
+.stickyUpdated {
+	height: 110px !important;
+	transition-duration: 0.5s;
+	transition-timing-function: ease;
+	transition-property: height;
+}	
+.stickyUpdatedSmooth{	
+	transition-duration: 0.5s;
+	transition-timing-function: ease;
+	transition-property: height;
+}
+.sticky_1 {
+	height: 60px !important;
+}
+.sticky1 {
+	display: none !important;
+}
+.sticky1_1 {
+	display: block !important;
+	height: 60px;
+	background-color: #f8f8f8f8;
+	margin: 0;
+	position: absolute;
+}
+.sticky2 {	
+	height: 60px !important;
+	line-height: 60px !important;
+}
+.sticky2_2 {
+	color: #5D5D5D !important;
+}
+.sticky3_1 {	
+	color: #5D5D5D !important;
+	line-height: 60px !important;
+	opacity: 1 !important;
+}
+.sticky_carousel {
+	visibility: hidden;
+}
+.sticky_search {
+	position: fixed !important;	
+	z-index: 10001;
+	top: 0px;
+}

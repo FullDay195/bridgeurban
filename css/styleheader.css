@@ -6,12 +6,16 @@ body {
 /*Search_bar*/ 
 #wrap_search_top {	
 	position: absolute;
+	top: -50px;
 	height: 50px;
 	width: 1349px;
 	padding: 0 124.5px;
 	background-color: black;	
 	line-height: 50px;
 	color: #888888;	
+	transition-duration: 0.5s;
+	transition-timing-function: ease;
+	transition-property: top;
 }
 input:focus {outline: 0;}
 #wrap_search_top input {
@@ -27,17 +31,20 @@ input:focus {outline: 0;}
 }
 #wrap_search_top .fa-times:hover {cursor: pointer;} 
 
-
 #container_menu {	
 	margin: 0 45px 0 45px;
 	height: 100px;
-	padding: 0 80px 0 80px;			
+	padding: 0 80px 0 80px;		
+	transition-duration: 0.5s;
+	transition-timing-function: ease;
+	transition-property: margin;		
 }
-#container_menu img {
+#container_menu .logo1 {
 	height: 90px;
 	background-color: transparent;
 	margin: 5px 0;	
 }
+#container_menu .logo2 {display: none;}
 #container_menu a:hover{
 	cursor: pointer;
 }
@@ -65,7 +72,7 @@ input:focus {outline: 0;}
 .inner_right .main_menu {
  	float: left;
 }
- .main_menu, .main_menu ul#menu {
+.main_menu, .main_menu ul#menu {
  	width: auto;
  	height: 100px;
  	margin: 0 !important;
@@ -183,6 +190,7 @@ ul#menu > li > a {
 }
 .dropdown_content2_2_header {border-left: 1px solid #3d3d3d;}
 
+
 /*Xổ menu BLOG*/
 .dropdown_content3 {
 	background-color: black;	
@@ -224,7 +232,6 @@ ul#menu > li > a {
 .dropdown:hover .dropdown_content3 {
 	display: block;	
 }
-
 .dropdown_content3_3 {
 	position: absolute;
 	left: -100%;
@@ -264,9 +271,9 @@ ul#menu > li > a {
 	font-size: 30px;
 }
 
-/*------------Title*/
 
-.wrap_title {	
+/*------------Title*/
+#wrap_title {	
 	position: absolute;
 	height: auto;
 	width: 80.527vw;	
@@ -275,57 +282,56 @@ ul#menu > li > a {
 	left: 50%;
 	transform: translateX(-50%);	
 	text-align: center;	
-
 }
-.wrap_title h2 {
+#wrap_title h2 {
 	color: #ffffff;
 	/*color: black;*/
 	font-size: 6.59vw;  /*90px*/
 	line-height: 7.32vw;  /*100px*/
 	font-family: 'Raleway', sans-serif;
 	font-weight: 600;
-	text-shadow: none;
+	text-shadow: none;	
 }
-.wrap_title p span {	
+#wrap_title p span {	
 	color: #F5F4F3;
 	font-size: 1.464vw; /*20px*/
 	line-height: 30px;
 	font-family: 'Raleway', sans-serif;	
 	text-shadow: none;
 }
-.wrap_title button > a {
+#wrap_title button > a {
 	text-decoration: none;	
 	color: #fff;
 	font-weight: 300;
 	letter-spacing: 2px;
 	border-width: 1px;
 }
-.wrap_title button {
+#wrap_title button {
 	height: 2.855vw;    /*39px*/
 	width: auto;
 	font-size: 13px;
 	padding: 0 23px;
 	margin: 10px 4px 0 4px; 		
 }
-.wrap_title .but1 {
+#wrap_title .but1 {
 	background-color: black;
 	border: 2px solid black;
 }
-.wrap_title .but2 {
+#wrap_title .but2 {
 	background-color: transparent;
 	border: 2px solid #fff;
 }  
-.wrap_title button:hover {
+#wrap_title button:hover {
 	background-color: #f53644;
 	border: 2px solid #f53644;
 }
 
-.wrap_title {	
+#wrap_title {	
 	animation-name: move;
 	animation-duration: 5s;
 	animation-iteration-count: infinite;
 	animation-direction: alternate; 
-	animation-delay: 0s;
+	animation-delay: 0s;	
 }
 
 @keyframes move {
@@ -385,6 +391,6 @@ ul#menu > li > a {
 .popup_menu_inner nav ul li span:hover {
 	color: #AAAAAA;
 }
-#wrap_popup_menu i:hover, i:active {  /*BUG: do not active*/
+#wrap_popup_menu i:hover, i:active {  
 	color: #AAAAAA;
 } 

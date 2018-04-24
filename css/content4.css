@@ -18,20 +18,62 @@ section.content4 {
 	width: 33.333333%;
 	padding:0 15px;
 }
-.content4_inner .screen-4 .icon{
+.content4_inner .screen-4 #iconContent41, #iconContent42, #iconContent43, #iconContent44, #iconContent45, #iconContent46, #iconContent47, #iconContent48, #iconContent49 {
 	position: absolute;
 	width: 40px;
 	height: 40px;
 	border-radius: 40px;
-	background-color: black;		
+	background-color: black;	
+	transform: scale(0, 0);
 }
-.content4_inner .screen-4 .icon i {
-	position: relative;
+
+
+.content4_inner .screen-4 #iconContent41 {
+	transition-delay: 0.2s;
+	transition-duration: 0.3s;	
+}
+.content4_inner .screen-4 #iconContent42 {
+	transition-delay: 0.4s;
+	transition-duration: 0.3s;	
+}
+.content4_inner .screen-4 #iconContent43 {
+	transition-delay: 0.6s;
+	transition-duration: 0.3s;	
+}
+.content4_inner .screen-4 #iconContent44 {
+	transition-delay: 0.8s;
+	transition-duration: 0.3s;	
+}
+.content4_inner .screen-4 #iconContent45 {
+	transition-delay: 1s;
+	transition-duration: 0.3s;	
+}
+.content4_inner .screen-4 #iconContent46 {
+	transition-delay: 1.2s;
+	transition-duration: 0.3s;	
+}
+.content4_inner .screen-4 #iconContent47 {
+	transition-delay: 1.4s;
+	transition-duration: 0.3s;	
+}
+.content4_inner .screen-4 #iconContent48 {
+	transition-delay: 1.6s;
+	transition-duration: 0.3s;	
+}
+.content4_inner .screen-4 #iconContent49 {
+	transition-delay: 1.8s;
+	transition-duration: 0.3s;	
+}
+
+
+.content4_inner .screen-4 #iconContent41, #iconContent42, #iconContent43, #iconContent44, #iconContent45, #iconContent46, #iconContent47, #iconContent48, #iconContent49 i {
+	/*position: relative;*/
 	font-size: 17px;
 	color: white;
 	line-height: 40px;
 }
 .content4_inner .screen-4 .icon_content {	
+	position: relative;
 	padding-left: 55px;	
 }
 section.content4 h5{

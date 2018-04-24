@@ -11,7 +11,7 @@
 	margin: 0 auto;
 	width: 1100px;
 }
-.content6_inner .space {	
+.content6_inner .space1 {	
 	padding-top: 105px;
 }
 .content6_inner h2 {
@@ -34,3 +34,48 @@
 	font-size: 18px;
 	font-weight: 300;	
 }
+.content6_inner .space2 {
+	padding-top: 75px;
+}
+
+/*--------Carousel-----------*/
+.content6_inner .wrap_img {
+	width: 1100px;
+	position: relative;
+	display: block;	
+	float: none;	
+	margin: 0px;
+	/*cursor: move;*/
+	height: 128px;
+	overflow: hidden;
+}
+.content6_inner .wrap_img ul {
+	list-style: none;		
+	float: none; 
+	position: absolute; 
+	margin: 0; 
+	padding: 0;
+	width: 4400px; 
+	opacity: 1; 	
+	animation-name: mymove;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+	animation-duration: 18s;
+	animation-delay: 3s;
+}
+@keyframes mymove {
+	0%	{left: 0px; position: relative;} 
+	16.666666666%, 33.33333333% {left: -275px; position: relative; } 
+	50%, 66.66666666%{left: -550px; position: relative;} 
+	83.33333333% ,100% {left: -825px; position: relative;}
+}
+.content6_inner .wrap_img ul li {
+	float: left;
+	margin-left: 2px;
+}
+.content6_inner .wrap_img ul li img{
+	height: 128px;
+	width: 273px;
+	cursor: pointer;
+}
+ /*---------------Miss INTERACT!?????*/

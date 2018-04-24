@@ -6,7 +6,7 @@ function hide1Element() {
 
 function display1Element() {
 	document.getElementById("wrap_search_top").style.top = "0px";
-	document.getElementById("container_menu").style.margin = "50px 45px 0 45px";
+	document.getElementById("container_menu").style.margin = "50px 45px 0 45px";	
 	document.getElementById("myCarousel").style.top = "50px";
 }
 
