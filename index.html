@@ -5,9 +5,10 @@
 	<link rel="stylesheet" href="css/styleheader.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  	
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/phuc-responsive.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
   	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
   	<link rel="stylesheet" href="css/content1.css">  		
   	<link rel="stylesheet" href="css/content2.css">
@@ -19,12 +20,13 @@
   	<link rel="stylesheet" href="css/content8.css">
   	<link rel="stylesheet" href="css/content9.css">
   	<link rel="stylesheet" href="css/backtotop.css"> 
-  	<link rel="stylesheet" href="css/footer.css"> 
+		<link rel="stylesheet" href="css/footer.css"> 
+		
 </head>
 
 <body style="width: 100%; height: 0">	
 	<header>	
-		<div id="wrap_search_top">						 
+		<div id="wrap_search_top" style="width: 100vw;">						 
 			<form style="height: 50px">
 				<i class="fa fa-search"></i>					
 				<input type="text" placeholder="Search">
@@ -32,130 +34,311 @@
 				<i onclick="hide1Element()" class="fa fa-times" style="float: right; line-height: 50px;"></i>
 			</form>
 			<!-- script-->
-		</div>	
+		</div>
 
-		<div class="wrap-menu" id="wrap-menuid" style="top: -60px;">			
-			<div id="container_menu" style="top: 50px">						
-				<a href="javascript:void(0)"><img src="image/logo_urban.png" alt="logo" class="logo1"></a>
-				<a href="javascript:void(0)"><img src="image/logodark.png" alt="logo"  class="logo2"></a>
-				<div class="inner_right">					
-					<div class="button">
-						<a onclick="display1Element()" class="search_button" href="javascript:void(0)"><i class="fa fa-search"></i></a>
+		<div class="wrap-menu" id="wrap-menuid"> <!-- style="top: -60px;" -->
+			<div class="container-fluid">
+				<!-- Menu for mobile -->
+				<div class="phuc-wrap-container-mobile-menu row">
+					<div class="col-xs-4 phuc-mobile-wrap-menu text-left" style="padding: 0;">
+						<!-- menu icon -->
+						<nav>
+							<button class="navbar-toggler phuc-bnt-menu phuc-submenu" type="button" data-toggle="collapse" data-target="#phuc-collapse-menu" aria-controls="phuc-collapse-menu" aria-expanded="false" aria-label="Toggle navigation">
+								<i class="fa fa-bars" style="color: black;"></i>
+							</button>
+						</nav>
+											
+					</div>
+
+					<div class="col-xs-4 phuc-mobile-logo text-center"><span style="color: black;">B</span></div>
+
+					<div class="col-xs-4 button text-right" style="padding:0;">
+						<a onclick="display1Element()" class="search_button phuc-bnt-menu" style="margin-right: 10px;" href="javascript:void(0)"><i class="fa fa-search"></i></a>
 						<!-- script -->
-						<a onclick="display2Element()" class="bars_button" href="javascript:void(0)"><i class="fa fa-bars"></i></a>
+						<a onclick="display2Element()" class="bars_button phuc-bnt-menu" href="javascript:void(0)"><i class="fa fa-bars" style="color: black;"></i></a>
 						<!-- script -->
-					</div>					 
-					<nav class="main_menu">
-						<ul id="menu">						
-							<li class="dropdown"><a href="javascript:void(0)" class="fc"><span>HOME</span></a></li>
-							<li class="dropdown"><a href="javascript:void(0)" class="fc"><span>PAGES</span></a>
-								<ul class="dropdown_content1">
-									<li><a href="javascript:void(0)"><span>ABOUT THE TEAM</span></a></li>
-									<li><a href="javascript:void(0)"><span>ABOUT THE COMPANY</span></a></li>
-									<li><a href="javascript:void(0)"><span>CONTACT US</span></a></li>
-									<li><a href="javascript:void(0)"><span>LEFT SIDEBAR</span></a></li>
-									<li><a href="javascript:void(0)"><span>RIGHT SIDEBAR</span></a></li>
+					</div>
+				</div>
+
+				<div class="row" style="margin-bottom: 15px; margin-left: 0px;">
+					<!-- menu content -->
+					<nav class="collapse col-xs-12" style="padding: 0;" id="phuc-collapse-menu">
+						<ul style="list-style-type: none; padding: 0;">						
+							<li class="dropdown">
+								<button class="navbar-toggler phuc-bnt-menu phuc-submenu phuc-menu-style" type="button" data-toggle="collapse" data-target="#phuc-collapse-menu" aria-controls="phuc-collapse-menu" aria-expanded="false" aria-label="Toggle navigation">
+									<a href="javascript:void(0)" class="phuc-submenu" style="color: #F7606B">HOME</a>
+								</button>
+							</li>
+							<li class="dropdown">
+								<a href="javascript:void(0)">								
+									<button class="navbar-toggler phuc-bnt-menu phuc-submenu phuc-menu-style" type="button" data-toggle="collapse" data-target="#phuc-page-sub-menu" aria-controls="phuc-page-sub-menu" aria-expanded="false" aria-label="Toggle navigation">
+										PAGES
+										<i class="fa fa-angle-right phuc-icon-angle"></i>
+									</button>
+								</a>
+								<ul class="collapse" id="phuc-page-sub-menu" style="list-style-type: none;">
+									<li class="phuc-menu-style phuc-bnt-menu"><a href="javascript:void(0)" class="phuc-submenu"><span>ABOUT THE TEAM</span></a></li>
+									<li class="phuc-menu-style phuc-bnt-menu"><a href="javascript:void(0)" class="phuc-submenu"><span>ABOUT THE COMPANY</span></a></li>
+									<li class="phuc-menu-style phuc-bnt-menu"><a href="javascript:void(0)" class="phuc-submenu"><span>CONTACT US</span></a></li>
+									<li class="phuc-menu-style phuc-bnt-menu"><a href="javascript:void(0)" class="phuc-submenu"><span>LEFT SIDEBAR</span></a></li>
+									<li class="phuc-menu-style phuc-bnt-menu"><a href="javascript:void(0)" class="phuc-submenu"><span>RIGHT SIDEBAR</span></a></li>
 								</ul>																	
 							</li>																		
-							<li class="dropdown"><a href="javascript:void(0)" class="fc"><span>WORK</span></a>				
-								<ul class="dropdown_content2">
-									<li class="dropdown_content2_header">
-										<a href="javascript:void(0)"><span>DEFAULT (TEXT AND SPACE)</span></a>
-										<ul style="padding: 0;">
-											<li><a href="javascript:void(0)"><span>TWO COLUMNS GRID</span></a></li>
-											<li><a href="javascript:void(0)"><span>THREE COLUMNS GRID</span></a></li>
-											<li><a href="javascript:void(0)"><span>FOUR COLUMNS GRID</span></a></li>
-											<li><a href="javascript:void(0)"><span>FOUR COLUMNS WIDE</span></a></li>
-											<li><a href="javascript:void(0)"><span>FIVE COLUMNS WIDE</span></a></li>
-											<li><a href="javascript:void(0)"><span>SIX COLUMNS WIDE</span></a></li>
+							<li class="dropdown">
+								<a href="javascript:void(0)">								
+									<button class="navbar-toggler phuc-bnt-menu phuc-submenu phuc-menu-style" type="button" data-toggle="collapse" data-target="#phuc-work-sub-menu" aria-controls="phuc-work-sub-menu" aria-expanded="false" aria-label="Toggle navigation">
+										WORK
+										<i class="fa fa-angle-right phuc-icon-angle"></i>
+									</button>
+								</a>				
+								<ul id="phuc-work-sub-menu" class="collapse" style="list-style-type: none;">
+									<li>
+										<a href="javascript:void(0)" class="phuc-submenu">										
+											<button class="navbar-toggler phuc-bnt-menu phuc-submenu phuc-menu-style" type="button" data-toggle="collapse" data-target="#phuc-default-sub2-menu" aria-controls="phuc-default-sub2-menu" aria-expanded="false" aria-label="Toggle navigation">
+												DEFAULT (TEXT AND SPACE)
+												<i class="fa fa-angle-right phuc-icon-angle"></i>
+											</button>
+										</a>
+										<ul id="phuc-default-sub2-menu" class="collapse" style="list-style-type: none;">
+											<li class="phuc-menu-style phuc-bnt-menu"><a href="javascript:void(0)" class="phuc-submenu"><span>TWO COLUMNS GRID</span></a></li>
+											<li class="phuc-menu-style phuc-bnt-menu"><a href="javascript:void(0)" class="phuc-submenu"><span>THREE COLUMNS GRID</span></a></li>
+											<li class="phuc-menu-style phuc-bnt-menu"><a href="javascript:void(0)" class="phuc-submenu"><span>FOUR COLUMNS GRID</span></a></li>
+											<li class="phuc-menu-style phuc-bnt-menu"><a href="javascript:void(0)" class="phuc-submenu"><span>FOUR COLUMNS WIDE</span></a></li>
+											<li class="phuc-menu-style phuc-bnt-menu"><a href="javascript:void(0)" class="phuc-submenu"><span>FIVE COLUMNS WIDE</span></a></li>
+											<li class="phuc-menu-style phuc-bnt-menu"><a href="javascript:void(0)" class="phuc-submenu"><span>SIX COLUMNS WIDE</span></a></li>
 										</ul>
 									</li>
-									<li class="dropdown_content2_header dropdown_content2_2_header">
-										<a href="javascript:void(0)"><span>GALLERY STYLE WITH SPACE</span></a>
-										<ul style="padding: 0">												
-											<li><a href="javascript:void(0)"><span>TWO COLUMNS GRID</span></a></li>
-											<li><a href="javascript:void(0)"><span>THREE COLUMNS GRID</span></a></li>
-											<li><a href="javascript:void(0)"><span>FOUR COLUMNS GRID</span></a></li>
-											<li><a href="javascript:void(0)"><span>FOUR COLUMNS WIDE</span></a></li>
-											<li><a href="javascript:void(0)"><span>FIVE COLUMNS WIDE</span></a></li>
-											<li><a href="javascript:void(0)"><span>SIX COLUMNS WIDE</span></a></li>	
+									<li>
+										<a href="javascript:void(0)" class="phuc-submenu">										
+											<button class="navbar-toggler phuc-bnt-menu phuc-submenu phuc-menu-style" type="button" data-toggle="collapse" data-target="#phuc-gallery-sub2-menu" aria-controls="phuc-gallery-sub2-menu" aria-expanded="false" aria-label="Toggle navigation">
+												GALLERY STYLE WITH SPACE
+												<i class="fa fa-angle-right phuc-icon-angle"></i>
+											</button>
+										</a>
+										<ul class="collapse" id="phuc-gallery-sub2-menu" style="list-style-type: none;">												
+											<li class="phuc-menu-style phuc-bnt-menu"><a href="javascript:void(0)" class="phuc-submenu"><span>TWO COLUMNS GRID</span></a></li>
+											<li class="phuc-menu-style phuc-bnt-menu"><a href="javascript:void(0)" class="phuc-submenu"><span>THREE COLUMNS GRID</span></a></li>
+											<li class="phuc-menu-style phuc-bnt-menu"><a href="javascript:void(0)" class="phuc-submenu"><span>FOUR COLUMNS GRID</span></a></li>
+											<li class="phuc-menu-style phuc-bnt-menu"><a href="javascript:void(0)" class="phuc-submenu"><span>FOUR COLUMNS WIDE</span></a></li>
+											<li class="phuc-menu-style phuc-bnt-menu"><a href="javascript:void(0)" class="phuc-submenu"><span>FIVE COLUMNS WIDE</span></a></li>
+											<li class="phuc-menu-style phuc-bnt-menu"><a href="javascript:void(0)" class="phuc-submenu"><span>SIX COLUMNS WIDE</span></a></li>	
 										</ul>
 									</li>
-									<li class="dropdown_content2_header dropdown_content2_2_header">
-										<a href="javascript:void(0)"><span>GALLERY STYLE NO SPACE</span></a>
-										<ul style="padding: 0">												
-											<li><a href="javascript:void(0)"><span>TWO COLUMNS GRID</span></a></li>
-											<li><a href="javascript:void(0)"><span>THREE COLUMNS GRID</span></a></li>
-											<li><a href="javascript:void(0)"><span>FOUR COLUMNS GRID</span></a></li>
-											<li><a href="javascript:void(0)"><span>FOUR COLUMNS WIDE</span></a></li>
-											<li><a href="javascript:void(0)"><span>FIVE COLUMNS WIDE</span></a></li>
-											<li><a href="javascript:void(0)"><span>SIX COLUMNS WIDE</span></a></li>	
+									<li>
+										<a href="javascript:void(0)" class="phuc-submenu">
+										
+											<button class="navbar-toggler phuc-bnt-menu phuc-submenu phuc-menu-style" type="button" data-toggle="collapse" data-target="#phuc-gallery-nospace-sub2-menu" aria-controls="phuc-gallery-nospace-sub2-menu" aria-expanded="false" aria-label="Toggle navigation">
+												GALLERY STYLE NO SPACE
+												<i class="fa fa-angle-right phuc-icon-angle"></i>
+											</button>
+										</a>
+										<ul class="collapse" id="phuc-gallery-nospace-sub2-menu" style="list-style-type: none;">												
+											<li class="phuc-menu-style phuc-bnt-menu"><a href="javascript:void(0)" class="phuc-submenu"><span>TWO COLUMNS GRID</span></a></li>
+											<li class="phuc-menu-style phuc-bnt-menu"><a href="javascript:void(0)" class="phuc-submenu"><span>THREE COLUMNS GRID</span></a></li>
+											<li class="phuc-menu-style phuc-bnt-menu"><a href="javascript:void(0)" class="phuc-submenu"><span>FOUR COLUMNS GRID</span></a></li>
+											<li class="phuc-menu-style phuc-bnt-menu"><a href="javascript:void(0)" class="phuc-submenu"><span>FOUR COLUMNS WIDE</span></a></li>
+											<li class="phuc-menu-style phuc-bnt-menu"><a href="javascript:void(0)" class="phuc-submenu"><span>FIVE COLUMNS WIDE</span></a></li>
+											<li class="phuc-menu-style phuc-bnt-menu"><a href="javascript:void(0)" class="phuc-submenu"><span>SIX COLUMNS WIDE</span></a></li>	
 										</ul>
 									</li>
-									<li class="dropdown_content2_header dropdown_content2_2_header">
-										<a href="javascript:void(0)"><span>SINGLE PROJECT</span></a>
-										<ul style="padding: 0">												
-											<li><a href="javascript:void(0)"><span>VERTICAL FLOATING SIDEBAR</span></a></li>
-											<li><a href="javascript:void(0)"><span>VERTICAL WIDE PROJECT</span></a></li>
-											<li><a href="javascript:void(0)"><span>SMALL SLIDER PROJECT</span></a></li>
-											<li><a href="javascript:void(0)"><span>BIG SLIDER PROJECT</span></a></li>
-											<li><a href="javascript:void(0)"><span>GALERRY</span></a></li>
-											<li><a href="javascript:void(0)"><span>VIDEO (IN ANY TEMPLATE)</span></a></li>	
+									<li>
+										<a href="javascript:void(0)">			
+											<button class="navbar-toggler phuc-bnt-menu phuc-submenu phuc-menu-style" type="button" data-toggle="collapse" data-target="#phuc-single-sub2-menu" aria-controls="phuc-single-sub2-menu" aria-expanded="false" aria-label="Toggle navigation">
+												SINGLE PROJECT	
+												<i class="fa fa-angle-right phuc-icon-angle"></i>
+											</button>
+										</a>
+										<ul class="collapse" id="phuc-single-sub2-menu" style="list-style-type: none;">												
+											<li class="phuc-menu-style phuc-bnt-menu"><a href="javascript:void(0)" class="phuc-submenu"><span>VERTICAL FLOATING SIDEBAR</span></a></li>
+											<li class="phuc-menu-style phuc-bnt-menu"><a href="javascript:void(0)" class="phuc-submenu"><span>VERTICAL WIDE PROJECT</span></a></li>
+											<li class="phuc-menu-style phuc-bnt-menu"><a href="javascript:void(0)" class="phuc-submenu"><span>SMALL SLIDER PROJECT</span></a></li>
+											<li class="phuc-menu-style phuc-bnt-menu"><a href="javascript:void(0)" class="phuc-submenu"><span>BIG SLIDER PROJECT</span></a></li>
+											<li class="phuc-menu-style phuc-bnt-menu"><a href="javascript:void(0)" class="phuc-submenu"><span>GALERRY</span></a></li>
+											<li class="phuc-menu-style phuc-bnt-menu"><a href="javascript:void(0)" class="phuc-submenu"><span>VIDEO (IN ANY TEMPLATE)</span></a></li>	
 										</ul>
 									</li>
 								</ul>									
 							</li>
-							<li class="dropdown"><a href="javascript:void(0)" class="fc"><span>BLOG</span></a>				
-								<ul class="dropdown_content3">
-									<li><a href="javascript:void(0)"><span>LARGE IMAGE</span></a></li>
-									<li><a href="javascript:void(0)"><span>MASONRY</span></a></li>
-									<li><a href="javascript:void(0)"><span>MEDIUM IMAGE</span></a></li>
-									<li><a href="javascript:void(0)"><span>BLOG WITH SIDEBAR</span></a></li>
-									<li><a href="javascript:void(0)"><span>SINGLE POST</span><i class="fa fa-angle-left"></i></a> 
-										<ul class="dropdown_content3_3">
-											<li><a href="javascript:void(0)"><span>AUDIO POST</span></a></li>
-											<li><a href="javascript:void(0)"><span>VIDEO POST</span></a></li>
-											<li><a href="javascript:void(0)"><span>BLOCKQUOTE POST</span></a></li>
-											<li><a href="javascript:void(0)"><span>LINK POST</span></a></li>
-											<li><a href="javascript:void(0)"><span>GALLERY POST</span></a></li>
-											<li><a href="javascript:void(0)"><span>POST WITHDOWN SIDEBAR</span></a></li>	
-											<li><a href="javascript:void(0)"><span>STANDARD POST</span></a></li>
+							<li class="dropdown">
+								<a href="javascript:void(0)" class="phuc-submenu">								
+									<button class="navbar-toggler phuc-bnt-menu phuc-submenu phuc-menu-style" type="button" data-toggle="collapse" data-target="#phuc-blog-sub-menu" aria-controls="phuc-blog-sub-menu" aria-expanded="false" aria-label="Toggle navigation">
+										BLOG
+										<i class="fa fa-angle-right phuc-icon-angle"></i>
+									</button>
+								</a>				
+								<ul class="collapse" id="phuc-blog-sub-menu" style="list-style-type: none;">
+									<li class="phuc-menu-style phuc-bnt-menu"><a href="javascript:void(0)" class="phuc-submenu"><span>LARGE IMAGE</span></a></li>
+									<li class="phuc-menu-style phuc-bnt-menu"><a href="javascript:void(0)" class="phuc-submenu"><span>MASONRY</span></a></li>
+									<li class="phuc-menu-style phuc-bnt-menu"><a href="javascript:void(0)" class="phuc-submenu"><span>MEDIUM IMAGE</span></a></li>
+									<li class="phuc-menu-style phuc-bnt-menu"><a href="javascript:void(0)" class="phuc-submenu"><span>BLOG WITH SIDEBAR</span></a></li>
+									<li>
+										<a href="javascript:void(0)">										
+											<button class="navbar-toggler phuc-bnt-menu phuc-submenu phuc-menu-style" style="padding-left: 0px;" type="button" data-toggle="collapse" data-target="#phuc-singlepost-sub2-menu" aria-controls="phuc-singlepost-sub2-menu" aria-expanded="false" aria-label="Toggle navigation">
+												SINGLE POST
+												<i class="fa fa-angle-right phuc-icon-angle"></i>
+											</button>
+										</a> 
+										<ul class="collapse" id="phuc-singlepost-sub2-menu" style="list-style-type: none;">
+											<li class="phuc-menu-style phuc-bnt-menu"><a href="javascript:void(0)" class="phuc-submenu"><span>AUDIO POST</span></a></li>
+											<li class="phuc-menu-style phuc-bnt-menu"><a href="javascript:void(0)" class="phuc-submenu"><span>VIDEO POST</span></a></li>
+											<li class="phuc-menu-style phuc-bnt-menu"><a href="javascript:void(0)" class="phuc-submenu"><span>BLOCKQUOTE POST</span></a></li>
+											<li class="phuc-menu-style phuc-bnt-menu"><a href="javascript:void(0)" class="phuc-submenu"><span>LINK POST</span></a></li>
+											<li class="phuc-menu-style phuc-bnt-menu"><a href="javascript:void(0)" class="phuc-submenu"><span>GALLERY POST</span></a></li>
+											<li class="phuc-menu-style phuc-bnt-menu"><a href="javascript:void(0)" class="phuc-submenu"><span>POST WITHDOWN SIDEBAR</span></a></li>	
+											<li class="phuc-menu-style phuc-bnt-menu"><a href="javascript:void(0)" class="phuc-submenu"><span>STANDARD POST</span></a></li>
 										</ul>
 									</li>						
 								</ul>
 							</li>	
 						</ul>					
-					</nav>					
+					</nav>
 				</div>
+
+				<div id="container_menu" style="top: 50px">						
+						<a href="javascript:void(0)"><img src="image/logo_urban.png" alt="logo" class="logo1"></a>
+						<a href="javascript:void(0)"><img src="image/logodark.png" alt="logo"  class="logo2"></a>
+						<div class="inner_right">					
+							<div class="button">
+								<a onclick="display1Element()" class="search_button" href="javascript:void(0)"><i class="fa fa-search"></i></a>
+								<!-- script -->
+								<a onclick="display2Element()" class="bars_button" href="javascript:void(0)"><i class="fa fa-bars"></i></a>
+								<!-- script -->
+							</div>					 
+							<nav class="main_menu">
+								<ul id="menu">						
+									<li class="dropdown"><a href="javascript:void(0)" class="fc"><span>HOME</span></a></li>
+									<li class="dropdown"><a href="javascript:void(0)" class="fc"><span>PAGES</span></a>
+										<ul class="dropdown_content1">
+											<li><a href="javascript:void(0)"><span>ABOUT THE TEAM</span></a></li>
+											<li><a href="javascript:void(0)"><span>ABOUT THE COMPANY</span></a></li>
+											<li><a href="javascript:void(0)"><span>CONTACT US</span></a></li>
+											<li><a href="javascript:void(0)"><span>LEFT SIDEBAR</span></a></li>
+											<li><a href="javascript:void(0)"><span>RIGHT SIDEBAR</span></a></li>
+										</ul>																	
+									</li>																		
+									<li class="dropdown"><a href="javascript:void(0)" class="fc"><span>WORK</span></a>				
+										<ul class="dropdown_content2">
+											<li class="dropdown_content2_header">
+												<a href="javascript:void(0)"><span>DEFAULT (TEXT AND SPACE)</span></a>
+												<ul style="padding: 0;">
+													<li><a href="javascript:void(0)"><span>TWO COLUMNS GRID</span></a></li>
+													<li><a href="javascript:void(0)"><span>THREE COLUMNS GRID</span></a></li>
+													<li><a href="javascript:void(0)"><span>FOUR COLUMNS GRID</span></a></li>
+													<li><a href="javascript:void(0)"><span>FOUR COLUMNS WIDE</span></a></li>
+													<li><a href="javascript:void(0)"><span>FIVE COLUMNS WIDE</span></a></li>
+													<li><a href="javascript:void(0)"><span>SIX COLUMNS WIDE</span></a></li>
+												</ul>
+											</li>
+											<li class="dropdown_content2_header dropdown_content2_2_header">
+												<a href="javascript:void(0)"><span>GALLERY STYLE WITH SPACE</span></a>
+												<ul style="padding: 0">												
+													<li><a href="javascript:void(0)"><span>TWO COLUMNS GRID</span></a></li>
+													<li><a href="javascript:void(0)"><span>THREE COLUMNS GRID</span></a></li>
+													<li><a href="javascript:void(0)"><span>FOUR COLUMNS GRID</span></a></li>
+													<li><a href="javascript:void(0)"><span>FOUR COLUMNS WIDE</span></a></li>
+													<li><a href="javascript:void(0)"><span>FIVE COLUMNS WIDE</span></a></li>
+													<li><a href="javascript:void(0)"><span>SIX COLUMNS WIDE</span></a></li>	
+												</ul>
+											</li>
+											<li class="dropdown_content2_header dropdown_content2_2_header">
+												<a href="javascript:void(0)"><span>GALLERY STYLE NO SPACE</span></a>
+												<ul style="padding: 0">												
+													<li><a href="javascript:void(0)"><span>TWO COLUMNS GRID</span></a></li>
+													<li><a href="javascript:void(0)"><span>THREE COLUMNS GRID</span></a></li>
+													<li><a href="javascript:void(0)"><span>FOUR COLUMNS GRID</span></a></li>
+													<li><a href="javascript:void(0)"><span>FOUR COLUMNS WIDE</span></a></li>
+													<li><a href="javascript:void(0)"><span>FIVE COLUMNS WIDE</span></a></li>
+													<li><a href="javascript:void(0)"><span>SIX COLUMNS WIDE</span></a></li>	
+												</ul>
+											</li>
+											<li class="dropdown_content2_header dropdown_content2_2_header">
+												<a href="javascript:void(0)"><span>SINGLE PROJECT</span></a>
+												<ul style="padding: 0">												
+													<li><a href="javascript:void(0)"><span>VERTICAL FLOATING SIDEBAR</span></a></li>
+													<li><a href="javascript:void(0)"><span>VERTICAL WIDE PROJECT</span></a></li>
+													<li><a href="javascript:void(0)"><span>SMALL SLIDER PROJECT</span></a></li>
+													<li><a href="javascript:void(0)"><span>BIG SLIDER PROJECT</span></a></li>
+													<li><a href="javascript:void(0)"><span>GALERRY</span></a></li>
+													<li><a href="javascript:void(0)"><span>VIDEO (IN ANY TEMPLATE)</span></a></li>	
+												</ul>
+											</li>
+										</ul>									
+									</li>
+									<li class="dropdown"><a href="javascript:void(0)" class="fc"><span>BLOG</span></a>				
+										<ul class="dropdown_content3">
+											<li><a href="javascript:void(0)"><span>LARGE IMAGE</span></a></li>
+											<li><a href="javascript:void(0)"><span>MASONRY</span></a></li>
+											<li><a href="javascript:void(0)"><span>MEDIUM IMAGE</span></a></li>
+											<li><a href="javascript:void(0)"><span>BLOG WITH SIDEBAR</span></a></li>
+											<li><a href="javascript:void(0)"><span>SINGLE POST</span><i class="fa fa-angle-left"></i></a> 
+												<ul class="dropdown_content3_3">
+													<li><a href="javascript:void(0)"><span>AUDIO POST</span></a></li>
+													<li><a href="javascript:void(0)"><span>VIDEO POST</span></a></li>
+													<li><a href="javascript:void(0)"><span>BLOCKQUOTE POST</span></a></li>
+													<li><a href="javascript:void(0)"><span>LINK POST</span></a></li>
+													<li><a href="javascript:void(0)"><span>GALLERY POST</span></a></li>
+													<li><a href="javascript:void(0)"><span>POST WITHDOWN SIDEBAR</span></a></li>	
+													<li><a href="javascript:void(0)"><span>STANDARD POST</span></a></li>
+												</ul>
+											</li>						
+										</ul>
+									</li>	
+								</ul>					
+							</nav>					
+						</div>
+					</div>
 			</div>
+
+			
 	<!--Nội dung-->
 			<div class="content">
-				<div id="myCarousel" class="carousel slide" data-ride="carousel" style="position: absolute; top:0px;z-index: -1; transition-duration: 0.5s;	transition-timing-function: ease; transition-property: top;">
-    				<!-- Nút chấm dưới hình -->
-    				<ol class="carousel-indicators" style="bottom: 60px">
-    			  		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    			  		<li data-target="#myCarousel" data-slide-to="1"></li>  			
-    				</ol>
+				<!-- <div id="wrap_title">
+					<h2 id="wrap_title_tmp" class="title phuc-res-popup">URBAN ENVIRONMENTS</h2>
+					<p class="phuc-res-popup">
+						<span id="wrap_title_tmp2">CROC-EMBOSSED LEATHER CONSTRUCTS THIS MODERN RAG & BONE BAG.</span> 
+						<br>
+						<span id="wrap_title_tmp3">A TOP STRAP PIERCES THROUGH THE FRONT FALP.</span>					
+					</p>
+					<button id="wrap_title_tmp4" class="but1 phuc-res-popup"><a href="javascript:void(0)">VIEW MORE</a></button>
+					<button id="wrap_title_tmp5" class="but2 phuc-res-popup"><a href="javascript:void(0)">VIEW MORE</a></button>
+				</div> -->
 
-    				<!-- Background -->    				
-    				<div class="carousel-inner" >    						
-    			  		<div class="item active">    			    		
-    			    		<img src="image/slide1.jpg" alt="slide1" style="width:100%; height: 100%">
-    			  		</div>
+				<div id="myCarousel" class="phuc-carouse carousel slide phuc-carouse" style="position: absolute; top:0px;z-index: -1; transition-duration: 0.5s;	transition-timing-function: ease; transition-property: top;" data-ride="carousel">
+					<div id="wrap_title">
+						<h2 id="wrap_title_tmp" class="title phuc-res-popup">URBAN ENVIRONMENTS</h2>
+						<p class="phuc-res-popup">
+							<span id="wrap_title_tmp2">CROC-EMBOSSED LEATHER CONSTRUCTS THIS MODERN RAG & BONE BAG.</span> 
+							<br>
+							<span id="wrap_title_tmp3">A TOP STRAP PIERCES THROUGH THE FRONT FALP.</span>					
+						</p>
+						<button id="wrap_title_tmp4" class="but1 phuc-res-popup"><a href="javascript:void(0)">VIEW MORE</a></button>
+						<button id="wrap_title_tmp5" class="but2 phuc-res-popup"><a href="javascript:void(0)">VIEW MORE</a></button>
+					</div>
+					<!-- Nút chấm dưới hình -->
+    			<ol class="carousel-indicators" style="bottom: 60px">
+    		 		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    		 		<li data-target="#myCarousel" data-slide-to="1"></li>  			
+    			</ol>
+
+    			<!-- Background -->    				
+    			<div class="carousel-inner" >    						
+    				<div class="item active">    			    		
+    			 		<img class="phuc-img-carousel" src="image/slide1.jpg" alt="slide1" style="width:100vw">
+    				</div>
 			
-    			  		<div class="item">    			    		
-    			    		<img src="image/slide2.jpg" alt="slide1" style="width:100%; height: 100%">
-    			  		</div> 
-    				</div>	    						
+    			<div class="item">    			    		
+    				<img class="phuc-img-carousel" src="image/slide2.jpg" alt="slide1" style="width:100vw">
+    			</div> 
+ 				</div>	    						
 
 
     				<!-- Left and right controls -->
-    				<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    				<a class="phuc-responsive-button left carousel-control" href="#myCarousel" data-slide="prev">
     			  		 <!-- <span class="glyphicon glyphicon-chevron-left"></span> -->
     			  		<span class="pre-nav"><i class="fa fa-angle-left"></i></span>
     			  		<span class="sr-only">Previous</span>
     				</a>
-    				<a class="right carousel-control" href="#myCarousel" data-slide="next">
+    				<a class="phuc-responsive-button right carousel-control" href="#myCarousel" data-slide="next">
     			  		<!-- <span class="glyphicon glyphicon-chevron-right"></span> -->
     			  		<span class="nex-nav"><i class="fa fa-angle-right"></i></span>
     			  		<span class="sr-only">Next</span>
@@ -164,16 +347,7 @@
 			</div>
 			
 						
-    		<div id="wrap_title">
-    			<h2 id="wrap_title_tmp" class="title">URBAN ENVIRONMENTS</h2>
-    			<p>
-    				<span id="wrap_title_tmp2">CROC-EMBOSSED LEATHER CONSTRUCTS THIS MODERN RAG & BONE BAG.</span> 
-    				<br>
-    				<span id="wrap_title_tmp3">A TOP STRAP PIERCES THROUGH THE FRONT FALP.</span>					
-    				</p>
-    			<button id="wrap_title_tmp4" class="but1"><a href="javascript:void(0)">VIEW MORE</a></button>
-    			<button id="wrap_title_tmp5" class="but2"><a href="javascript:void(0)">VIEW MORE</a></button>
-    		</div>   			
+    		   			
     	
 			<div id="wrap_popup_menu">
 				<a href="javascript:void(0)"><img src="image/logo_urban.png" alt="logo"></a>
@@ -588,8 +762,11 @@
   	<script src="js/parallax.js"></script>  	
   	<script src="js/content8.js"></script> 
   	<script src="js/content8.js"></script> 
-  	<script src="js/opacity.js"></script>   	
-	<script type="text/javascript"></script> 
+		<script src="js/opacity.js"></script>
+		   	
+	  	
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="js/phuc-responsive.js"></script>
 
 </body>
 </html>
