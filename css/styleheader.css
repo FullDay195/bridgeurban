@@ -288,16 +288,16 @@ ul#menu > li > a {
 #wrap_title h2 {
 	color: #ffffff;
 	/*color: black;*/
-	font-size: 6.59vw;  /*90px*/
-	line-height: 7.32vw;  /*100px*/
+	font-size: 75px;  /*90px*/
+	/* line-height: 100px;  100px */
 	font-family: 'Raleway', sans-serif;
 	font-weight: 600;
 	text-shadow: none;	
 }
 #wrap_title p span {	
 	color: #F5F4F3;
-	font-size: 1.464vw; /*20px*/
-	line-height: 30px;
+	font-size: 20px; /*20px*/
+	/* line-height: 30px; */
 	font-family: 'Raleway', sans-serif;	
 	text-shadow: none;
 }
@@ -309,7 +309,7 @@ ul#menu > li > a {
 	border-width: 1px;
 }
 #wrap_title button {
-	height: 2.855vw;    /*39px*/
+	height: 30px;    /*39px*/
 	width: auto;
 	font-size: 13px;
 	padding: 0 23px;

@@ -24,10 +24,15 @@ function reponsiveMenu() {
     $(".phuc-img-carousel").css("width", "auto");
     $(".phuc-img-carousel").css("height", "90vh");
     //alert($("#myCarousel").css("position"));
+    document.getElementById("imgContent2").style.opacity = "1";
+    $('#iconContent41, #iconContent42, #iconContent43, #iconContent44, #iconContent45, #iconContent46, #iconContent47, #iconContent48, #iconContent49').css({transform: 'scale(1,1)'});
+    document.getElementById("imgContent5").style.opacity = "1";
+   	document.getElementById("imgContent5").style.left = "0";
   } else {
     $("#myCarousel").css("position", "absolute");
     $(".phuc-img-carousel").css("width", "100%");
     $(".phuc-img-carousel").css("height", "auto");
+    document.getElementById("imgContent2").style.opacity = "0";
   }
 }
 

@@ -59,7 +59,8 @@
   }
   .phuc-res-popup {
     position: relative;
-    top: 100px;
+    top: 40px;
+    margin: 30px 0;
   }
   .phuc-responsive-button {
     display: none;
@@ -69,5 +70,42 @@
   }
   .container_menu {
     display: none;
+  }
+  #wrap_title h2 {
+    font-size: 40px;
+  }
+  #wrap_title {
+    width: 100%;
+  }
+  #wrap_title p span {
+    font-size: 15px;
+  }
+  .main {
+    top: 0;
+  }
+  .content1_inner .menu_icons .screen-3  {
+    width: auto;	
+	  float: none;
+  }
+  .content4_inner .screen-4, .content5_container {
+    width: 100vw;
+    float: none;
+  }
+  .content1_inner .menu_icons {
+    height: auto;
+  }
+  .content2_container, .content3_container .btn_container, .content3_container .btn_container .btn, .content3_container {
+    width: auto;
+  }
+  section.content4 {
+    height: auto;
+  }
+  .content5_inner #imgContent5 {
+    position: static;
+    width: auto;
+  }
+  .content5_inner .text {
+    width: auto;
+    margin: 0;
   }
 }

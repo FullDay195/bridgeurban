@@ -13,7 +13,7 @@ function display1Element() {
 function display2Element() {
 	document.getElementById("wrap_popup_menu").style.display = "block";
 	$('html, body').css({
-    overflow: 'hidden',
+    overflowY: 'hidden',
     height: '100%'
 	});
 }
@@ -21,7 +21,7 @@ function display2Element() {
 function hide2Element() {
 	document.getElementById("wrap_popup_menu").style.display = "none";
 	$('html, body').css({
-    overflow: 'unset',
+    overflowY: 'unset',
     height: 'auto'
 	});
 }
