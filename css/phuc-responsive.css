@@ -135,4 +135,21 @@
   .content6_inner .wrap_img ul {
     padding: 0 0 0 15%;
   }
+  #phuc-carousel-1 {
+    background-image: url("../image/slide1.jpg");
+    background-position: center;
+  }
+  #phuc-carousel-2 {
+    background-image: url("../image/slide2.jpg");
+    background-position: center;
+  }
+  .phuc-img-carousel {
+    display: none !important;
+  }
+  .carousel-inner {
+    height: 90vh;
+  }
+  .phuc-wrap-img-carousel {
+    height: 90vh;
+  }
 }
