@@ -27,12 +27,20 @@ function reponsiveMenu() {
     document.getElementById("imgContent2").style.opacity = "1";
     $('#iconContent41, #iconContent42, #iconContent43, #iconContent44, #iconContent45, #iconContent46, #iconContent47, #iconContent48, #iconContent49').css({transform: 'scale(1,1)'});
     document.getElementById("imgContent5").style.opacity = "1";
-   	document.getElementById("imgContent5").style.left = "0";
+    document.getElementById("imgContent5").style.left = "0";
+    document.getElementById("imgContent7").style.opacity = "1";
+    document.getElementById("imgContent7").style.right = "0";
+    //set padding of slide img to center the slide
+    var slideWidth = (width - 273)/2;
+    slideWidth = "0 " + slideWidth + "px";
+    // alert(slideWidth);
+    $(".content6_inner .wrap_img ul").css("padding", slideWidth); 
   } else {
     $("#myCarousel").css("position", "absolute");
     $(".phuc-img-carousel").css("width", "100%");
     $(".phuc-img-carousel").css("height", "auto");
     document.getElementById("imgContent2").style.opacity = "0";
+    $(".content6_inner .wrap_img ul").css("padding", "0");
   }
 }
 
